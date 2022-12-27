@@ -42,7 +42,7 @@ class MemberTest {
         List<Member> memberList = em.createQuery("select m from Member m", Member.class)
                 .getResultList();
 
-        for(Member member: memberList) {
+        for (Member member : memberList) {
             System.out.println(member.getUsername());
         }
     }
